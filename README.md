@@ -1,2 +1,2 @@
-# anime-_website
+# anime-website
 سایت معرفی انیمه ها

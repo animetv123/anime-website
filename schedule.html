@@ -1,56 +1,48 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8">
-  <title>زمان‌بندی پخش</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>زمان‌بندی پخش - انیمه تی‌وی</title>
   <style>
     body {
       font-family: sans-serif;
-      background-color: #ffffff;
-      color: #000000;
+      background-color: #fff;
+      color: #333;
       text-align: center;
-      direction: rtl;
+      padding: 20px;
+      margin: 0;
     }
-    table {
-      margin: 20px auto;
-      border-collapse: collapse;
+    nav {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 12px 0;
     }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 8px 16px;
+      background-color: #222;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
-    th {
-      background-color: #f5f5f5;
+    nav a:hover {
+      background-color: crimson;
     }
   </style>
 </head>
 <body>
-  <h1>🗓️ زمان‌بندی پخش انیمه‌ها</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>روز</th>
-        <th>ساعت پخش</th>
-        <th>نام انیمه</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>شنبه</td>
-        <td>۲۰:۰۰</td>
-        <td>Death Note</td>
-      </tr>
-      <tr>
-        <td>دوشنبه</td>
-        <td>۲۰:۰۰</td>
-        <td>Attack on Titan</td>
-      </tr>
-      <tr>
-        <td>چهارشنبه</td>
-        <td>۲۰:۰۰</td>
-        <td>Jujutsu Kaisen</td>
-      </tr>
-    </tbody>
-  </table>
+  <nav>
+    <a href="index.html">خانه</a>
+    <a href="schedule.html">زمان‌بندی پخش</a>
+    <a href="player.html">صفحه پخش</a>
+  </nav>
+
+  <h1>زمان‌بندی پخش انیمه‌ها</h1>
+  <p>اینجا جدول زمان‌بندی پخش رو قرار میدیم.</p>
 </body>
 </html>

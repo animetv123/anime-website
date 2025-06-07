@@ -1,75 +1,37 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Serenadia TV</title>
-  <style>
-    body {
-      background-color: #ffffff;
-      color: #111111;
-      font-family: 'Vazirmatn', sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    nav {
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 12px 0;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 8px 16px;
-  background-color: #222;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-  background-color: crimson;
-}
-
-    main {
-      padding: 40px 20px;
-    }
-
-    footer {
-      background-color: #f2f2f2;
-      padding: 20px 0;
-      border-top: 1px solid #ccc;
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #666;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serenadia Studio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Serenadia TV</h1>
-    <nav>
+  <header class="navbar">
+    <div class="logo-container">
+      <span class="logo-left">SERENADIA</span>
+      <span class="logo-right">STUDIO</span>
+    </div>
+    <nav class="nav-links">
       <a href="#">خانه</a>
-      <a href="player.html">پخش انیمه</a>
-      <a href="schedule.html">زمان‌بندی پخش</a>
-      <a href="#">درباره ما</a>
+      <a href="#">پخش زنده</a>
+      <a href="#">زمان‌بندی</a>
     </nav>
   </header>
 
-  <main>
-    <h2>🎌  Serenadia TV خوش آمدید به  🎌</h2>
-    <p>اینجا هر هفته بهترین انیمه‌ها با زیرنویس فارسی رو پخش می‌کنیم</p>
-    <p>قسمت‌های جدید هر شنبه ساعت ۸ شب پخش می‌شن 🎥</p>
+  <main class="main-content">
+    <h1>به Serenadia Studio خوش آمدید</h1>
+    <p>جایی برای پخش انیمه با زیرنویس فارسی</p>
+    <div class="btn-container">
+      <a class="btn" href="#">خانه</a>
+      <a class="btn" href="#">پخش زنده</a>
+      <a class="btn" href="#">زمان‌بندی</a>
+    </div>
   </main>
 
-  <footer>
-    <p>© 2025 Serenadia TV - تمام حقوق محفوظ است.</p>
+  <footer class="footer">
+    <p>© 2025 Serenadia Studio</p>
   </footer>
 
 </body>

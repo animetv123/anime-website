@@ -1,10 +1,9 @@
-/* استایل پایه */
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background: #ffffff;
-  color: #000000;
+  font-family: 'Vazirmatn', sans-serif;
+  background: #fff;
+  color: #000;
 }
 
 /* نوار بالا */
@@ -13,51 +12,63 @@ body {
   justify-content: space-between;
   align-items: center;
   background: #000;
-  color: white;
-  padding: 10px 20px;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 /* لوگو دو تکه */
 .logo-container {
   display: flex;
-  font-weight: bold;
-  font-size: 18px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .logo-left {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
   padding: 5px 10px;
 }
 
 .logo-right {
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
   padding: 5px 10px;
-  border: 2px solid black;
+  border: 2px solid #000;
+  margin-left: 5px;
 }
 
-/* لینک‌های بالا */
+/* لینک‌ها */
 .nav-links a {
-  margin-left: 15px;
-  color: white;
+  margin-left: 20px;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
+.nav-links a:hover {
+  color: #bbb;
+}
+
+/* محتوای اصلی */
 .main-content {
   text-align: center;
-  margin-top: 50px;
+  padding: 100px 20px 60px;
 }
 
 .main-content h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .main-content p {
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 /* دکمه‌ها */
@@ -65,28 +76,30 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .btn {
-  padding: 10px 20px;
-  background: black;
-  color: white;
+  padding: 12px 24px;
+  background: #000;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
-  border: 2px solid black;
+  border: 2px solid #000;
   transition: all 0.3s ease;
+  border-radius: 5px;
 }
 
 .btn:hover {
-  background: white;
-  color: black;
+  background: #fff;
+  color: #000;
 }
 
 /* فوتر */
 .footer {
   text-align: center;
-  margin-top: 100px;
-  padding: 20px;
   font-size: 14px;
-  border-top: 1px solid #ccc;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  margin-top: 50px;
 }

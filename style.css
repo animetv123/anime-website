@@ -1,0 +1,92 @@
+/* استایل پایه */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #000000;
+}
+
+/* نوار بالا */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* لوگو دو تکه */
+.logo-container {
+  display: flex;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo-left {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+}
+
+.logo-right {
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  border: 2px solid black;
+}
+
+/* لینک‌های بالا */
+.nav-links a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.main-content h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* دکمه‌ها */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid black;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+
+/* فوتر */
+.footer {
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+}

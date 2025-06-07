@@ -1,39 +1,106 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Serenadia Studio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Vazirmatn&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <title>SERENADIA STUDIO</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url('bg-home.png'); /* این فایل پس‌زمینه‌ای هست که آپلود کردی */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: 'Georgia', serif;
+      color: black;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      background-color: black;
+      color: white;
+      padding: 20px 40px;
+      display: inline-block;
+      letter-spacing: 2px;
+      font-family: 'Georgia', serif;
+    }
+
+    .welcome {
+      margin-top: 20px;
+      font-size: 20px;
+      text-align: center;
+      letter-spacing: 1px;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .section-divider {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
+    }
+
+    .section-divider span {
+      margin: 0 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
-  <header class="navbar">
-    <div class="logo-container">
-      <span class="logo-left">SERENADIA</span>
-      <span class="logo-right">STUDIO</span>
-    </div>
-    <nav class="nav-links">
-      <a href="#">خانه</a>
-      <a href="#">پخش زنده</a>
-      <a href="#">زمان‌بندی</a>
+  <header>
+    <div class="logo">SERENADIA STUDIO</div>
+    <nav>
+      <a href="#">HOME</a>
+      <a href="#">SCHEDULE</a>
+      <a href="#">LIVE STREAM</a>
     </nav>
   </header>
 
-  <main class="main-content">
-    <h1>به Serenadia Studio خوش آمدید</h1>
-    <p>جایی برای پخش انیمه با زیرنویس فارسی</p>
-    <div class="btn-container">
-      <a class="btn" href="#">خانه</a>
-      <a class="btn" href="#">پخش زنده</a>
-      <a class="btn" href="#">زمان‌بندی</a>
-    </div>
-  </main>
+  <div class="hero">
+    <h1>SERENADIA STUDIO</h1>
+  </div>
 
-  <footer class="footer">
-    <p>© 2025 Serenadia Studio - تمام حقوق محفوظ است</p>
-  </footer>
+  <div class="welcome">
+    <p>WELCOME TO SERENADIA STUDIO</p>
+  </div>
+
+  <div class="section-divider">
+    <span>HOME</span>
+    <span>SCHEDULE</span>
+    <span>LIVE STREAM</span>
+  </div>
 
 </body>
 </html>

@@ -1,0 +1,96 @@
+/* پس‌زمینه کلی شیری روشن */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f1e7; /* رنگ شیری ملایم */
+    font-family: Tahoma, sans-serif;
+    direction: rtl;
+}
+
+/* کادر مستطیلی اصلی */
+.master-container {
+    max-width: 960px;
+    margin: 40px auto;
+    background-color: #fff8ec; /* رنگ شیری روشن‌تر */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* کادر داخلی کوچکتر */
+.inner-container {
+    background-color: #fff9f0;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+/* نوار بالا */
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e1d7c4;
+}
+
+/* لوگو سمت چپ */
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #3b2f2f; /* مشکی خیلی تیره ولی ملایم */
+}
+
+/* منو */
+.menu a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #5a4b3c;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #8c7b6b;
+}
+
+/* بخش محتوا */
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* کادر سمت چپ 600 در 450 */
+.left-box {
+    width: 600px;
+    height: 450px;
+    background-color: #fdf6e3; /* رنگ شیری روشن */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.1);
+}
+
+.left-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* کادر سمت راست 300 در 450 */
+.right-box {
+    width: 300px;
+    height: 450px;
+    background-color: #fdf6e3;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.1);
+}
+
+.right-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}

@@ -1,106 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fa">
+<head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SERENADIA STUDIO</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background-image: url('bg-home.png'); /* این فایل پس‌زمینه‌ای هست که آپلود کردی */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      font-family: 'Georgia', serif;
-      color: black;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      background-color: rgba(255, 255, 255, 0.6);
-    }
-
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    .hero {
-      text-align: center;
-      margin-top: 60px;
-    }
-
-    .hero h1 {
-      font-size: 60px;
-      background-color: black;
-      color: white;
-      padding: 20px 40px;
-      display: inline-block;
-      letter-spacing: 2px;
-      font-family: 'Georgia', serif;
-    }
-
-    .welcome {
-      margin-top: 20px;
-      font-size: 20px;
-      text-align: center;
-      letter-spacing: 1px;
-      font-family: 'Arial', sans-serif;
-    }
-
-    .section-divider {
-      display: flex;
-      justify-content: center;
-      margin: 40px 0;
-    }
-
-    .section-divider span {
-      margin: 0 10px;
-      font-size: 18px;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
-    <div class="logo">SERENADIA STUDIO</div>
     <nav>
-      <a href="#">HOME</a>
-      <a href="#">SCHEDULE</a>
-      <a href="#">LIVE STREAM</a>
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">TV</a></li>
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Info</a></li>
+      </ul>
     </nav>
   </header>
 
-  <div class="hero">
-    <h1>SERENADIA STUDIO</h1>
-  </div>
+  <main>
+    <h1 class="logo-title">SERENADIA <span>STUDIO</span></h1>
 
-  <div class="welcome">
-    <p>WELCOME TO SERENADIA STUDIO</p>
-  </div>
+    <section class="image-section">
+      <div class="image-box">
+        <img src="images/pic1.jpg" alt="Image 1">
+        <p>عنوان اول</p>
+      </div>
 
-  <div class="section-divider">
-    <span>HOME</span>
-    <span>SCHEDULE</span>
-    <span>LIVE STREAM</span>
-  </div>
+      <div class="image-box">
+        <img src="images/pic2.jpg" alt="Image 2">
+        <p>عنوان دوم</p>
+      </div>
+    </section>
+  </main>
 
+  <div class="floating-circle">شناور</div>
 </body>
 </html>

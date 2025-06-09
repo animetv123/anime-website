@@ -1,39 +1,198 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SERENADIA STUDIO</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>قالب مدرن</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset و پایه */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      direction: rtl;
+    }
+    .container {
+      background: #fff;
+      border-radius: 20px;
+      max-width: 1200px;
+      width: 100%;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 600px;
+    }
+    /* نوار ناوبری بالا */
+    nav {
+      background: #000;
+      color: #fff;
+      padding: 20px 40px;
+      border-bottom-left-radius: 40px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    nav .logo {
+      font-size: 1.6rem;
+      font-weight: 900;
+    }
+    /* بخش اصلی */
+    .main-content {
+      flex: 1;
+      display: flex;
+      padding: 40px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    /* متن بزرگ سمت چپ */
+    .text-block {
+      flex: 1 1 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .text-block h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 20px;
+      color: #111;
+      line-height: 1.1;
+    }
+    .text-block p {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 30px;
+      max-width: 400px;
+    }
+    /* باکس‌های تصویر */
+    .image-boxes {
+      flex: 1 1 500px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+    .image-box {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .image-box:hover {
+      transform: translateY(-8px);
+    }
+    .image-box img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 20px;
+      display: block;
+    }
+    /* دکمه شناور روی تصویر */
+    .btn-float {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      background: #ffd600; /* زرد */
+      border: none;
+      border-radius: 50px;
+      padding: 10px 20px;
+      font-weight: 700;
+      color: #000;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(255, 214, 0, 0.6);
+      transition: background 0.3s ease;
+    }
+    .btn-float:hover {
+      background: #f0c600;
+    }
+    /* آیکون ساده فلش */
+    .btn-float svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+    /* واکنش‌گرایی */
+    @media (max-width: 900px) {
+      .main-content {
+        flex-direction: column;
+        padding: 20px;
+      }
+      .text-block {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .text-block h1 {
+        font-size: 2.4rem;
+      }
+      .image-boxes {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+      }
+      .image-box img {
+        height: 120px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <div class="container">
     <nav>
-      <ul class="nav-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">TV</a></li>
-        <li><a href="#">Schedule</a></li>
-        <li><a href="#">Info</a></li>
-      </ul>
+      <div class="logo">لوگوی من</div>
     </nav>
-  </header>
-
-  <main>
-    <h1 class="logo-title">SERENADIA <span>STUDIO</span></h1>
-
-    <section class="image-section">
-      <div class="image-box">
-        <img src="images/pic1.jpg" alt="Image 1">
-        <p>عنوان اول</p>
+    <div class="main-content">
+      <div class="text-block">
+        <h1>عنوان بزرگ و بولد سمت چپ</h1>
+        <p>متن توضیحی کوتاه و مینیمال برای معرفی یا تبلیغ. این متن باید ساده، واضح و خوانا باشد.</p>
       </div>
-
-      <div class="image-box">
-        <img src="images/pic2.jpg" alt="Image 2">
-        <p>عنوان دوم</p>
+      <div class="image-boxes">
+        <div class="image-box">
+          <img src="https://source.unsplash.com/400x300/?nature,water" alt="تصویر 1" />
+          <button class="btn-float">
+            ادامه
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </button>
+        </div>
+        <div class="image-box">
+          <img src="https://source.unsplash.com/400x300/?city,night" alt="تصویر 2" />
+          <button class="btn-float">
+            ادامه
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </button>
+        </div>
+        <div class="image-box">
+          <img src="https://source.unsplash.com/400x300/?technology" alt="تصویر 3" />
+          <button class="btn-float">
+            ادامه
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </button>
+        </div>
       </div>
-    </section>
-  </main>
-
-  <div class="floating-circle">شناور</div>
+    </div>
+  </div>
 </body>
 </html>

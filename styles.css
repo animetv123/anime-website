@@ -14,11 +14,10 @@ body {
 .black-rectangle {
   background-color: #222222; /* مشکی */
   border-radius: 20px;
-  padding: 15px; /* این مقدار فاصله بین کادر مشکی و شیری */
+  padding: 25px; /* افزایش فاصله برای نوار مشکی ضخیم‌تر */
   box-sizing: border-box;
-  /* اندازه ثابت یا دلخواه */
-  width: 700px;
-  height: 400px;
+  width: 900px;  /* عرض بزرگ‌تر */
+  height: 550px; /* ارتفاع بزرگ‌تر */
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,8 +1,8 @@
-/* پس‌زمینه شیری */
+/* پس‌زمینه شیری کل صفحه */
 body {
   margin: 0;
   height: 100vh;
-  background-color: #f5f1e7; /* رنگ شیری */
+  background-color: #f5f1e7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,24 +10,41 @@ body {
   direction: rtl;
 }
 
-/* کادر مشکی بزرگ */
-.black-rectangle {
-  background-color: #222222; /* مشکی */
+/* کانتینر فولدر */
+.folder-container {
+  position: relative;
+  background-color: #222222; /* نوار مشکی اطراف */
+  padding: 15px;
   border-radius: 20px;
-  padding: 25px; /* افزایش فاصله برای نوار مشکی ضخیم‌تر */
+  width: 700px;
+  height: 500px;
   box-sizing: border-box;
-  width: 900px;  /* عرض بزرگ‌تر */
-  height: 550px; /* ارتفاع بزرگ‌تر */
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
-/* کادر شیری کوچکتر داخل کادر مشکی */
-.cream-rectangle {
-  background-color: #fdf6e3; /* رنگ شیری */
-  border-radius: 15px;
+/* زبانه‌ی بالای فولدر */
+.folder-tab {
+  position: absolute;
+  top: -30px;
+  width: 200px;
+  height: 40px;
+  background-color: #fdf6e3;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  color: #222;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* بدنه‌ی فولدر */
+.folder-body {
+  background-color: #fdf6e3; /* شیری */
   width: 100%;
   height: 100%;
+  border-radius: 15px;
   box-sizing: border-box;
+  padding: 20px;
 }

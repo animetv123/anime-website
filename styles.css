@@ -1,96 +1,71 @@
-/* پس‌زمینه کلی شیری روشن */
+/* پس‌زمینه صفحه */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #f5f1e7; /* رنگ شیری ملایم */
-    font-family: Tahoma, sans-serif;
-    direction: rtl;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f1e7; /* شیری روشن */
+  font-family: Tahoma, sans-serif;
+  direction: rtl;
 }
 
-/* کادر مستطیلی اصلی */
-.master-container {
-    max-width: 960px;
-    margin: 40px auto;
-    background-color: #fff8ec; /* رنگ شیری روشن‌تر */
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+/* کادر مشکی بزرگ */
+.outer-box {
+  max-width: 960px;
+  margin: 40px auto;
+  background-color: #222222; /* مشکی غالب */
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-/* کادر داخلی کوچکتر */
-.inner-container {
-    background-color: #fff9f0;
-    border-radius: 15px;
-    padding: 15px;
+/* کادر شیری درونی */
+.inner-box {
+  background-color: #fdf6e3; /* شیری */
+  border-radius: 15px;
+  padding: 15px 30px 30px 30px;
+  box-sizing: border-box;
 }
 
-/* نوار بالا */
+/* بخش بالا: لوگو و منو */
 .top-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 15px;
-    border-bottom: 1px solid #e1d7c4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d7cabf;
+  padding-bottom: 12px;
 }
 
 /* لوگو سمت چپ */
 .logo {
-    font-weight: bold;
-    font-size: 20px;
-    color: #3b2f2f; /* مشکی خیلی تیره ولی ملایم */
+  font-weight: bold;
+  font-size: 22px;
+  color: #222222;
 }
 
-/* منو */
+/* منوی وسطی */
+.menu {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  flex-grow: 1;
+}
+
 .menu a {
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 16px;
-    color: #5a4b3c;
-    font-weight: 600;
-    transition: color 0.3s;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  color: #222222;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 8px;
 }
 
 .menu a:hover {
-    color: #8c7b6b;
+  background-color: #222222;
+  color: #fdf6e3;
+  cursor: pointer;
 }
 
-/* بخش محتوا */
-.content {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-/* کادر سمت چپ 600 در 450 */
-.left-box {
-    width: 600px;
-    height: 450px;
-    background-color: #fdf6e3; /* رنگ شیری روشن */
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: inset 0 0 8px rgba(0,0,0,0.1);
-}
-
-.left-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-/* کادر سمت راست 300 در 450 */
-.right-box {
-    width: 300px;
-    height: 450px;
-    background-color: #fdf6e3;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: inset 0 0 8px rgba(0,0,0,0.1);
-}
-
-.right-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
+/* فضای خالی بین لوگو و منو */
+.spacer {
+  width: 120px; /* جا برای لوگو */
 }

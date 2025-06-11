@@ -39,10 +39,6 @@ body {
   object-fit: cover;
   border-radius: 20px;
 }
-.create-btn a {
-  text-decoration: none;
-  color: inherit;
-}
 .create-btn {
   position: absolute;
   bottom: 20px;
@@ -56,9 +52,8 @@ body {
   text-align: center;
   line-height: 1.2;
   cursor: pointer;
-  width: 40px;
-  height: 40px;
-  text-decoration: none
+  width: 60px;
+  height: 60px;
 }
 
 .side-image {
@@ -88,9 +83,8 @@ body {
   text-align: center;
   line-height: 1.2;
   cursor: pointer;
-  width: 40px;
-  height: 40px;
-  text-decoration: none
+  width: 60px;
+  height: 60px;
 }
 
 .side-image {

@@ -18,7 +18,7 @@ body {
   padding: 30px;
   background-color: #f0eadd; /* رنگ کرمی */
   border-radius: 25px;
-  border: 1px solid black;  /* ضخامت حاشیه کمتر شده */
+  border: .5px solid black;  /* ضخامت حاشیه کمتر شده */
   max-width: 1000px;
   margin: 40px auto;
   gap: 25px;

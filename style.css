@@ -40,7 +40,7 @@ body {
   border-radius: 20px;
 }
 
-.create-btn {
+.create-btn a {
   position: absolute;
   bottom: 20px;
   right: 20px;

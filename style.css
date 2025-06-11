@@ -209,11 +209,19 @@ body {
 }
 
 .info-box {
-  grid-area: info-box;
-  background: #fff;
-  border-radius: 20px;
+  direction: rtl; /* راست‌چین برای متن فارسی */
+  background-color: #fff; /* پس‌زمینه سفید یا هر رنگ دلخواه */
+  border: 2px solid #000; /* قاب مشکی دور متن */
+  border-radius: 15px;
   padding: 20px;
-  border: 2px solid #000;
+  margin: 30px auto;
+  max-width: 700px;
+  font-family: 'Vazirmatn', Tahoma, sans-serif; /* فونت فارسی مناسب */
+  font-size: 1.1rem;
+  line-height: 2;
+  text-align: justify;
+  color: #222;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .download-btn {

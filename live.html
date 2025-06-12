@@ -1,40 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title></title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Live Video Box</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0eadd;
+      font-family: sans-serif;
+    }
+
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .video-box {
+      background-color: #ffffff;
+      border: 3px solid black;
+      border-radius: 25px;
+      padding: 15px;
+      max-width: 700px;
+      width: 90%;
+      box-shadow: 0 0 0 6px black;
+    }
+
+    .video-box video {
+      width: 100%;
+      border-radius: 15px;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <header class="top-nav">
-      <div class="logo"><sup></sup></div>
-      <nav>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#">Home</a>
-        <a href="#">Live</a>
-      </nav>
-    </header>
 
-    <main class="main-content">
-      <div class="text-section">
-        <h1><br></h1>
-        <div>
-      </div>
-
-      <div class="image-wrapper">
-  <div class="main-image">
-    <img src="anime1.jpg" alt="Anime Character 1">
+  <div class="center-container">
+    <div class="video-box">
+      <video controls>
+        <source src="your-video.mp4" type="video/mp4">
+        مرورگر شما از ویدیو پشتیبانی نمی‌کند.
+      </video>
+    </div>
   </div>
-        </div>
-  
-      <div class="info-box">
-        <h3></h3>
-        <p>یه جای جمع و جور ساختیم که توش همه چیز هست
-          مثل یه اتاق کوچیک که هر دریچه اش به یه دنیای جدید باز میشه
-          کافیه واردش بشی✨
-</p>
+
+</body>
+</html>

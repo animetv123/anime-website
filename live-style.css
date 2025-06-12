@@ -45,7 +45,7 @@ body {
 
 .video-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   padding: 30px;
   background-color: #f0eadd;

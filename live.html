@@ -1,40 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SerenadiaStudio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <title>پخش زنده - AnimeTV</title>
+  <link rel="stylesheet" href="live-style.css" />
 </head>
 <body>
-  <div class="container">
-    <header class="top-nav">
-      <div class="logo"><sup></sup></div>
-      <nav>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#">Home</a>
-        <a href="live.html">Live</a>
-      </nav>
-    </header>
-    
-   <main class="main-content">
-      <div class="text-section">
-        <h1><br></h1>
-        <div>
+  <!-- نوار بالا -->
+  <header class="navbar">
+    <div class="logo">AnimeTV</div>
+    <nav class="nav-links">
+      <a href="index.html">خانه</a>
+      <a href="live.html" class="active">پخش زنده</a>
+    </nav>
+  </header>
+
+  <!-- ویدیو باکس -->
+  <main class="video-section">
+    <div class="video-box">
+      <video controls>
+        <source src="YOUR_VIDEO_LINK.mp4" type="video/mp4">
+        مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
+      </video>
+      <div class="video-description">
+        <h2>عنوان برنامه زنده</h2>
+        <p>در حال پخش انیمه مورد علاقه شما، به صورت زنده!</p>
       </div>
-
-     <div class="video-container">
-  <video controls>
-    <source src="video.mp4" type="video/mp4">
-  </video>
-</div>
-
-      <div class="info-box">
-        <h3></h3>
-        <p>یه جای جمع و جور ساختیم که توش همه چیز هست
-          مثل یه اتاق کوچیک که هر دریچه اش به یه دنیای جدید باز میشه
-          کافیه واردش بشی✨
-</p>
+    </div>
+  </main>
+</body>
+</html>

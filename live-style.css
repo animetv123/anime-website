@@ -45,17 +45,18 @@ body {
 
 .video-wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   background-color: #f0eadd;
-  border-radius: 25px;
+  border-radius: 20px;
   border: 0.5px solid black;
-  max-width: 1000px;
-  margin: 40px auto;
+  max-width: 800px;
+  margin: 0 auto;
   gap: 25px;
   box-shadow: 0 0 0 3px #000;
 }
+
 
 .info-box {
   direction: rtl;

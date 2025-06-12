@@ -56,19 +56,6 @@ body {
   gap: 25px;
   box-shadow: 0 0 0 3px #000;
 }
-.video-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh; /* مثلاً ۸۰٪ ارتفاع صفحه */
-  background-color: #f0eadd;
-  border-radius: 20px;
-  border: 4px solid black;
-  box-shadow: 0 0 0 6px #000;
-  margin: 50px auto;
-  max-width: 90%;
-}
-
 
 .info-box {
   direction: rtl;

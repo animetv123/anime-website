@@ -47,7 +47,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 30px;
+  padding: 0px;
   background-color: #f0eadd;
   border-radius: 25px;
   border: 0.5px solid black;

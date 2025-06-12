@@ -44,17 +44,15 @@ body {
 }
 
 .video-wrapper {
-  display: inline-block;
+  display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 0px;
+  padding: 30px;
   background-color: #f0eadd;
   border-radius: 25px;
-  border: 0.5px solid black;
   max-width: 1000px;
   margin: 40px auto;
   gap: 25px;
-  box-shadow: 0 0 0 3px #000;
 }
 
 .info-box {

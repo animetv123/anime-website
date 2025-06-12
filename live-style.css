@@ -45,14 +45,14 @@ body {
 
 .video-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
   background-color: #f0eadd;
-  border-radius: 20px;
+  border-radius: 25px;
   border: 0.5px solid black;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 1000px;
+  margin: 40px auto;
   gap: 25px;
   box-shadow: 0 0 0 3px #000;
 }

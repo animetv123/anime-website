@@ -1,33 +1,38 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>پخش زنده - AnimeTV</title>
-  <link rel="stylesheet" href="live-style.css" />
+  <title>Live - SerenadiaStudio</title>
+  <link rel="stylesheet" href="live.style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- نوار بالا -->
-  <header class="navbar">
-    <div class="logo">AnimeTV</div>
-    <nav class="nav-links">
-      <a href="index.html">خانه</a>
-      <a href="live.html" class="active">پخش زنده</a>
-    </nav>
-  </header>
+  <div class="container">
+    <header class="top-nav">
+      <div class="logo"><sup></sup></div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="live.html">Live</a>
+      </nav>
+    </header>
 
-  <!-- ویدیو باکس -->
-  <main class="video-section">
-    <div class="video-box">
-      <video controls>
-        <source src="YOUR_VIDEO_LINK.mp4" type="video/mp4">
-        مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
-      </video>
-      <div class="video-description">
-        <h2>عنوان برنامه زنده</h2>
-        <p>در حال پخش انیمه مورد علاقه شما، به صورت زنده!</p>
+    <main class="main-content">
+      <div class="video-box">
+        <video controls>
+          <source src="your-video.mp4" type="video/mp4">
+          مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
+        </video>
       </div>
-    </div>
-  </main>
+
+      <div class="info-box">
+        <h3>پخش زنده</h3>
+        <p>در اینجا می‌تونی انیمه‌ها رو به‌صورت زنده تماشا کنی.✨</p>
+        <a href="https://bioe.ir/serenadiastudio" target="_blank">
+          <button class="download-btn">مشاهده</button>
+        </a>
+      </div>
+    </main>
+  </div>
 </body>
 </html>

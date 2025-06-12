@@ -1,105 +1,95 @@
-/* ریست پایه */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Tahoma', sans-serif;
-  background-color: #f2efe5;
-  color: #000;
-  direction: rtl;
-  min-height: 100vh;
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: #f4f1ea;
 }
 
-/* نوار بالا */
-.navbar {
-  background-color: #000;
-  color: #fff;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.top-nav {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
 }
 
-.logo {
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
+.top-nav nav a {
+  color: white;
   margin-left: 20px;
-  font-size: 1rem;
+  text-decoration: none;
   font-weight: bold;
 }
 
-.nav-links a.active,
-.nav-links a:hover {
-  border-bottom: 2px solid #ffe600;
+.top-nav nav a:hover {
+  text-decoration: underline;
 }
 
-/* بخش ویدیو */
-.video-section {
+.main-content {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 50px 20px;
-  min-height: calc(100vh - 80px);
+  margin-top: 40px;
 }
 
 .video-box {
-  background-color: #fff;
-  border: 4px solid #000;
-  border-radius: 25px;
+  width: 100%;
+  max-width: 800px;
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 0 8px black;
+}
+
+.video-box video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info-box {
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 20px;
   padding: 20px;
   max-width: 800px;
-  width: 100%;
-  box-shadow: 0 0 0 6px #000000;
+  margin-top: 30px;
+  box-shadow: 0 0 0 8px black;
   text-align: center;
 }
 
-video {
-  width: 100%;
-  border-radius: 15px;
-  margin-bottom: 15px;
+.download-btn {
+  background-color: #ffe600;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
-/* توضیحات پایین ویدیو */
-.video-description h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #000;
+.download-btn:hover {
+  background-color: #ffdc00;
 }
 
-.video-description p {
-  font-size: 1rem;
-  color: #333;
-}
-
-/* ریسپانسیو برای موبایل */
-@media (max-width: 600px) {
-  .logo {
-    font-size: 1.3rem;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .video-box, .info-box {
+    max-width: 95%;
   }
 
-  .nav-links a {
-    margin-left: 10px;
-    font-size: 0.9rem;
+  .top-nav {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .video-description h2 {
-    font-size: 1.2rem;
-  }
-
-  .video-description p {
-    font-size: 0.9rem;
-  }
-
-  .video-box {
-    padding: 15px;
-    border-radius: 20px;
+  .top-nav nav a {
+    margin: 10px 0;
   }
 }

@@ -46,13 +46,14 @@ body {
 .video-wrapper {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 30px;
   background-color: #f0eadd;
   border-radius: 25px;
-  max-width: 1000px;
+  max-width: 90vw;
   margin: 40px auto;
   gap: 25px;
+  overflow: hidden;
 }
 
 .info-box {
